@@ -450,10 +450,13 @@ footer p {
 	#hero h1 {
 		font-size: 60px;
 		line-height: 50px;
+		margin-right: 14px;
 	}
 
 	#hero h2 {
 		transform: rotate(-90deg);
 		transform-origin: right;
+		position: relative;
+		bottom: 110px;
 	}
 }
