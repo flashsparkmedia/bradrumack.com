@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brad Rumack | Software Developer</title>
+    <link rel='stylesheet' type='text/css' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' />
+    <link rel='stylesheet' type='text/css' href='./normalize.css' />
+    <link rel='stylesheet' type='text/css' href='./styles.css' />
+    <link rel='stylesheet' type='text/css' href='./carousel.css' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="carousel-section" class='hidden'>
+        <ul class="carousel my-carousel carousel--thumb">
+            <input class="carousel__thumb" type="radio" id="1" name="thumb" checked="checked" />
+            <input class="carousel__thumb" type="radio" id="2" name="thumb" />
+            <input class="carousel__thumb" type="radio" id="3" name="thumb" />
+            <input class="carousel__thumb" type="radio" id="4" name="thumb" />
+            <input class="carousel__thumb" type="radio" id="5" name="thumb" />
+            <div class="carousel__controls">
+                <label
+                    class="carousel__control carousel__control--backward"
+                    for="5"
+                ></label>
+                <label
+                    class="carousel__control carousel__control--forward"
+                    for="2"
+                ></label>
+            </div>
+            <div class="carousel__controls">
+                <label
+                    class="carousel__control carousel__control--backward"
+                    for="1"
+                ></label>
+                <label
+                    class="carousel__control carousel__control--forward"
+                    for="3"
+                ></label>
+            </div>
+            <div class="carousel__controls">
+                <label
+                    class="carousel__control carousel__control--backward"
+                    for="2"
+                ></label>
+                <label
+                    class="carousel__control carousel__control--forward"
+                    for="4"
+                ></label>
+            </div>
+            <div class="carousel__controls">
+                <label
+                    class="carousel__control carousel__control--backward"
+                    for="3"
+                ></label>
+                <label
+                    class="carousel__control carousel__control--forward"
+                    for="5"
+                ></label>
+            </div>
+            <div class="carousel__controls">
+                <label
+                    class="carousel__control carousel__control--backward"
+                    for="4"
+                ></label>
+                <label
+                    class="carousel__control carousel__control--forward"
+                    for="1"
+                ></label>
+            </div>
+            <div class="carousel__track">
+                <li class="carousel__slide"><h2>1</h2></li>
+                <li class="carousel__slide"><h2>2</h2></li>
+                <li class="carousel__slide"><h2>3</h2></li>
+                <li class="carousel__slide"><h2>4</h2></li>
+                <li class="carousel__slide"><h2>5</h2></li>
+            </div>
+            <div class="carousel__indicators">
+                <label class="carousel__indicator" for="1"></label>
+                <label class="carousel__indicator" for="2"></label>
+                <label class="carousel__indicator" for="3"></label>
+                <label class="carousel__indicator" for="4"></label>
+                <label class="carousel__indicator" for="5"></label>
+            </div>
+        </ul>
+    </section>
+        
+    <header>
+        <nav>
+            <ul id='navbar' role="navigation">
+                <li id='logo'><img src='./Logo.png'/></a></li>
+                <li class='nav-item'><a href='#projects'>Recent Projects</a></li>
+                <li class='nav-item'><a href='#about'>About</a></li>
+                <li class='nav-item'><a href='#contact'>Contact</a></li>
+            </ul>
+        </nav>
+        <div id='hero'>
+            <div>
+                <h1>Br<span>ad</span> Ruma<span>ck</span></h1>
+                <h2>Full Stack <span>Engineer</span></h3>
+            </div>
+            <img src='./Logo.png'/>
+        </div>
+    </header>
+    <section id='projects'>
+        <div class='section-header right-header'>
+            <h3>Projects</h3>
+        </div>
+        <a name='projects'></a>
+        <article id='toodfrucks'>
+            <div class='article-logo'>
+                <img  src='toodfruckslogo.png'>
+            </div>
+            <div class='article-info'>
+                <p>
+                    ToodFrucks is an SPA with the goal of promoting the food truck industry. Its objective is to give food truck
+                    owners the ability to connect with consumers. Through the app, food trucks are able to share their
+                    present location and hours, as well as future locations. Consumers are able to locate trucks in their area,
+                    and search using keywords or cusine types.
+                </p>
+                <p>
+                   ToodFrucks is in continuous development. Due to the current world conditions, an official launch isn't yet planned, but
+                   a demo is available online. You'll find links below that log you in as either a consumer or a merchant. Long-term plans
+                   include online ordering, and possibly integration with food delivery services such as Doordash and Postmates.
+                </p>
+            </div>
+            <div class='article-graphics article-right-graphics'>
+                <div class="laptop">
+                    <img class='laptop-image' src='laptop.png' />
+                    <img class='site-image' src='toodfrucks.png' />
+                </div>
+            </div>
+            <div class='article-icons'>
+                <a href='http://www.toodfrucks.com' target='_blank'><i class="fa fa-laptop"></i></a>
+                <i class="fa fa-image"></i>
+                <a href='https://github.com/brumack/TF' target='_blank'><i class="fa fa-github"></i></a>
+            </div>
+        </article>
+        <article id='hawkins'>
+            <div class='article-logo'>
+                <img src='hawkinsLogo.png'>
+            </div>
+            <div class='article-graphics'>
+                <div class="laptop">
+                    <img class='laptop-image' src='laptop.png' />
+                    <img class='site-image' src='hawkins.png' />
+                </div>
+            </div>
+            <div class='article-info'>
+                <p>
+                    Hawkins.png was built for a client of mine who runs a photography editing business.
+                    He needed a way to streamline his process of onboarding new clients and providing 
+                    editing services through project assignments to his staff of editors. For him I
+                    created an SPA that handles file uploads, downloads and permissions management.
+                </p>
+                <p>
+                    Clients are taken through the project creation process by picking packages options and then are prompted
+                    to upload their files. A project can then be assigned to an editor, who can download the files, make
+                    their edits, and reupload for approval. Upon approval, a notification is sent to the client that they
+                    can now download the edited files.
+                </p>
+            </div>
+            <div class='article-icons'>
+                <a href='https://www.hawkinspng.com' target='_blank'><i class="fa fa-laptop"></i></a>
+                <i class="fa fa-image"></i>
+            </div>
+        </article>
+        <article id='binance'>
+            <div class='article-logo' >
+                <img src='bitcoin.png'>
+            </div>
+            <div class='article-info'>
+                <p>
+                    A while ago I started experimenting with automated cryptocurrency trading. I'd frequently build and rebuild bots
+                    to try new strategies. I'd make some money, lose some money, and then reevaluate. I went through this process 
+                    many times, and grew tired of frequently rewriting code to connect to the Binance API.
+                </p>
+                <p>
+                    I finally wised up and realized I needed to create my own library that I could simply plug in to my
+                    new logic each time. This made rapid itteration much easier, and I finally came up with a winning solution...
+                    for only a couple months. Then the market went bear and it was time to hang it up.
+                </p>
+            </div>
+            <div class='article-graphics article-right-graphics'>
+                <div class="laptop">
+                    <img class='laptop-image' src='laptop.png' />
+                    <img class='site-image' src='binance.png' />
+                </div>
+            </div>
+            <div class='article-icons'>
+                <a href='https://github.com/brumack/binance-api-library' target='_blank'><i class="fa fa-github"></i></a>
+            </div>
+        </article>
+    </section>
+    <section id='about'>
+        <div class='section-header'>
+            <h3>About Me</h3>
+        </div>
+        <article>
+            <a name='about'></a>
+            <div class='article-info'>
+                <p>
+                    I have been writing code for over 4 years and I honestly wish I had started sooner. It's definitely
+                    my life's calling. I started my own business in summer of 2019 as a web app developer and consultant.
+                    I've also recently worked in a live ops role for Doordash, where I developed some significant internal tooling
+                    for my team. <br><br> Prior, I worked on a cryptocurrency trading platform as a contract back end engineer. While I've mainly
+                    worked in Javascript and Node.js, I'd like to consider myself language-agnostic. I'm happy and eager to
+                    teach myself anything I don't already know to get something done and done well.
+                </p>
+                <ul>
+                    <li>
+                        <div class='job'>
+                            <i class="fa fa-laptop"></i>
+                            <div class='job-info'>
+                                <h4>FlashSpark Media</h4>
+                                <span>Owner/Engineer, June 2019 - current</span>
+                                <p>Creating highly-functional business applications to solve problems, and improve processes to promote growth.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='job'>
+                            <i class="fa fa-laptop"></i>
+                            <div class='job-info'>
+                                <h4>Doordash</h4>
+                                <span>Live Operations, June 2019 - Feb 2020</span>
+                                <p>Developed significant internal tooling to greatly enhance team productivity, accuracy and efficiency.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='job'>
+                           <i class="fa fa-laptop"></i>
+                            <div>
+                                <h4>Valid Strategy</h4>
+                                <span>Contract Back End Engineer, June 2018-October 2018</span>
+                                <p>Developed automated cryptocurrency trading platform, utilizing web scraping, textual and statistical analysis, 
+                                    and numerous cryptocurrency exchange APIs
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class='article-icons'>
+                <a href='https://github.com/brumack' target='_blank'><i class="fa fa-github"></i></a>
+                <a href='https://www.linkedin.com/in/bradleyrumack/' target='_blank'><i class="fa fa-linkedin"></i></a>
+            </div>
+        </article>
+    </section>
+    <section id='contact'>
+        <div class='section-header right-header'>
+            <h3>Contact</h3>
+            <a name='contact'></a>
+        </div>
+        <article>
+            <div class='article-logo' >
+                <h4>Let's build something!</h4>
+            </div>
+            <div class='article-info'>
+                <p>
+                    I'm available for consulting as well as development. If you have questions about
+                    how technology can make your business more successful, I'm happy to offer my expertise. 
+                    Questions cost nothing, and I can talk about this stuff forever. You can reach me via 
+                    email or linkedIn via the icons below, or by phone at <a href="tel:1-480-599-5214">480-599-5214</a>.
+                </p>
+            </div>
+            <div class='article-icons'>
+                <a href='mailto:brad@flashspark.io' target='_blank'><i class="fa fa-envelope"></i></a>
+                <a href='https://www.linkedin.com/in/bradleyrumack/' target='_blank'><i class="fa fa-linkedin"></i></a>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <p>©2020 BradRumack.com | All Rights Reserved</p>
+    </footer>
+
+    <script src='index.js'></script>
+</body>
+</html>
