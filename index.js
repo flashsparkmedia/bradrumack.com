@@ -5,11 +5,10 @@ document.addEventListener('DOMContentLoaded', e => {
     const aboutSection = document.getElementById('about')
     const contact = document.querySelector('a[href="#contact"]')
     const contactSection = document.getElementById('contact')
-    const closeCarousel = document.querySelector('.close-carousel')
-    const hawkinsCarouselIcon = document.querySelector('#hawkins .article-icons .fa.fa-image')
-    const toodfrucksCarouselIcon = document.querySelector('#toodfrucks .article-icons .fa.fa-image')
-    const hawkinsCarousel = document.getElementById('hawkins-carousel')
-    const toodfrucksCarousel = document.getElementById('toodfrucks-carousel')
+    const hawkinsFilmIcon = document.querySelector('#hawkins .article-icons .fa.fa-film')
+    const toodfrucksFilmIcon = document.querySelector('#toodfrucks .article-icons .fa.fa-film')
+    const videoModal = document.getElementById('video-modal')
+    const videoElement = document.querySelector('#video-modal video')
 
     projects.addEventListener('click', e => {
         e.preventDefault()
@@ -32,20 +31,26 @@ document.addEventListener('DOMContentLoaded', e => {
         })
     })
 
-    closeCarousel.addEventListener('click', () => {
-        const carousel = document.querySelector('.carousel-section')
-        carousel.classList.add('hidden')
-        carousel.classList.remove('visible')
+    videoModal.addEventListener('click', () => {
+        videoElement.pause()
+        toggleModal()
     })
 
-    hawkinsCarouselIcon.addEventListener('click', () => {
-        hawkinsCarousel.classList.toggle('hidden')
-        hawkinsCarousel.classList.toggle('visible')
+    hawkinsFilmIcon.addEventListener('click', () => {
+        videoElement.setAttribute('src', 'https://s3-us-west-1.amazonaws.com/bradrumack.com/hawkinsvideo.mov')
+        toggleModal()
+        videoElement.play()
     })
 
-    toodfrucksCarouselIcon.addEventListener('click', () => {
-        console.log(toodfrucksCarousel)
-        toodfrucksCarousel.classList.toggle('hidden')
-        toodfrucksCarousel.classList.toggle('visible')
+    toodfrucksFilmIcon.addEventListener('click', () => {
+        videoElement.setAttribute('src', 'https://s3-us-west-1.amazonaws.com/bradrumack.com/toodfrucks.mov')
+        toggleModal()
+        videoElement.play()
     })
 })
+
+const toggleModal = () => {
+    const videoModal = document.getElementById('video-modal')
+    videoModal.classList.toggle('hidden')
+    videoModal.classList.toggle('visible')
+}
