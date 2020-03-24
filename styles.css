@@ -132,7 +132,7 @@ article {
 	padding: 60px;
 }
 
-article:nth-of-type(even) {
+article:nth-of-type(odd) {
 	background: rgba(0, 0, 0, 0.05);
 }
 
