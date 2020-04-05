@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	user-select: none;
 }
 
 body {
@@ -199,6 +200,12 @@ article:nth-child(odd) .article-icons i:hover {
 #projects {
 	/* grid-template-rows: 200px 500px 500px 500px;	 */
 	grid-template-rows: 200px 5fr 5fr 5fr;
+}
+
+.article-icons .disabled:hover,
+.article-icons .disabled i:hover {
+	cursor: not-allowed;
+	color: inherit;
 }
 
 /* -- About and Contact Sections -- */
