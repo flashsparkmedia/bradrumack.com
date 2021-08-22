@@ -6,9 +6,7 @@ document.addEventListener('DOMContentLoaded', e => {
     const contact = document.querySelector('a[href="#contact"]')
     const contactSection = document.getElementById('contact')
     const hawkinsFilmIcon = document.querySelector('#hawkins .article-icons .fa.fa-film')
-    const toodfrucksFilmIcon = document.querySelector('#toodfrucks .article-icons .fa.fa-film')
-    const videoModal = document.getElementById('video-modal')
-    const videoElement = document.querySelector('#video-modal video')
+    const content = document.querySelectorAll('.content')
 
     projects.addEventListener('click', e => {
         e.preventDefault()
@@ -31,26 +29,25 @@ document.addEventListener('DOMContentLoaded', e => {
         })
     })
 
-    videoModal.addEventListener('click', () => {
-        videoElement.pause()
-        toggleModal()
-    })
-
-    hawkinsFilmIcon.addEventListener('click', () => {
-        videoElement.setAttribute('src', 'https://s3-us-west-1.amazonaws.com/bradrumack.com/hawkinsvideo.mov')
-        toggleModal()
-        videoElement.play()
-    })
-
-    toodfrucksFilmIcon.addEventListener('click', () => {
-        videoElement.setAttribute('src', 'https://s3-us-west-1.amazonaws.com/bradrumack.com/toodfrucks.mov')
-        toggleModal()
-        videoElement.play()
-    })
+    for (const item of content) {
+        item.addEventListener('click', e => {
+            console.log(e.target)
+            showModal(e.target.src, e.target.nodeName)
+        })
+    }
 })
 
-const toggleModal = () => {
-    const videoModal = document.getElementById('video-modal')
-    videoModal.classList.toggle('hidden')
-    videoModal.classList.toggle('visible')
+const showModal = (src, type) => {
+    console.log(src)
+    const body = document.querySelector('body')
+    const modal = document.createElement('div')
+    const content = document.createElement(type.toLowerCase())
+    content.src = src
+
+    modal.id = 'modal'
+    modal.addEventListener('click', () => modal.parentElement.removeChild(modal))
+
+    modal.appendChild(content)
+    console.log(modal)
+    body.appendChild(modal)
 }

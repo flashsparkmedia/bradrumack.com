@@ -15,22 +15,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brad Rumack | Software Developer</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
     <link rel='stylesheet' type='text/css' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' />
     <link rel='stylesheet' type='text/css' href='./normalize.css' />
-    <link rel='stylesheet' type='text/css' href='./styles.css' />
     <link rel='stylesheet' type='text/css' href='./carousel.css' />
+    <link rel='stylesheet' type='text/css' href='./styles.css' />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id='video-modal' class='hidden'>
-        <video controls></video>
-    </section>
     <header>
         <nav>
             <ul id='navbar' role="navigation">
-                <li id='logo'><img src='./Logo.png'/></a></li>
-                <li class='nav-item'><a href='#projects'>Recent Projects</a></li>
-                <li class='nav-item'><a href='#about'>About</a></li>
+                <li id='logo'><img src='images/Logo.png'/></a></li>
+                <li class='nav-item'><a href='#projects'>Client Builds</a></li>
+                <li class='nav-item'><a href='#personal'>Personal Projects</a></li>
+                <li class='nav-item'><a href='#about'>About Me</a></li>
                 <li class='nav-item'><a href='#contact'>Contact</a></li>
             </ul>
         </nav>
@@ -39,96 +38,171 @@
                 <h1>Brad Rumack</h1>
                 <h2>Full Stack <span>Engineer</span></h3>
             </div>
-            <img src='./Logo.png'/>
+            <img src='images/Logo.png'/>
         </div>
     </header>
     <section id='projects'>
         <div class='section-header right-header'>
-            <h3>Projects</h3>
+            <h3>Client Builds</h3>
         </div>
         <a name='projects'></a>
+        <article id='dmdsystems'>
+            <div class='article-logo'>
+                <img  src='https://ship.dmdsystems.com/images/logo.webp'>
+            </div>
+            <div class='article-info'>
+                <p>
+                    "DMD (<a href='https://www.dmdsystems.com/en-us/home' target='_blank'>DMD Systems</a>) provides ITAD solutions adhering to the most rigorous environmental and security standards to deliver confidence for 
+                    companies who value our world and their reputation. DMD works with hundreds of companies and public entities to securely 
+                    destroy their data, decommission assets, and redeploy or remarket the equipment across IT categories including Data Center, 
+                    End User Compute, and Mobility."
+                </p>
+                <p>
+                    DMD had recently launched a new product, but soon realized that their shipping processes currently in place didn't scale to
+                    fit this new product's needs. They came to me seeking a way to integrate round-trip shipping into ShipStation's API, and then allow
+                    end-users the ability to track their shipment both to them and then back to DMD. DMD's clients can also generate company-wide
+                    containing all users' shipments. Data from their sales system is imported into the application via CSV, then shipping labels for both directions
+                    are automatically generated and and provided via PDF for easy printing. 
+                </p>
+                <p>
+                    This application was built on MERN+Redux stack with the following APIs: Google oAuth2, ShipStation, OpenCage, Outlook via
+                    <a href='https://www.npmjs.com/package/nodemailer'>nodemailer</a>, UPS, and FedEx via <a href='https://www.npmjs.com/package/delivery-tracker'>delivery-tracker</a>
+                </p>
+            </div>
+            <div class='article-graphics article-right-graphics'>
+                <div class="laptop">
+                    <img class='laptop-image' src='images/laptop.png' />
+                    <div class="carousel" aria-label="Gallery">
+                        <ol class="carousel__viewport">
+                          <li id="carousel__slide1"
+                              tabindex="1"
+                              class="carousel__slide">
+                            <img src ='images/DMD/Dashboard.png' class='content'>
+                            <div class="carousel__snapper">
+                              <a href="#carousel__slide4"
+                                 class="carousel__prev">Go to last slide</a>
+                              <a href="#carousel__slide1"
+                                 class="carousel__next">Go to next slide</a>
+                            </div>
+                          </li>
+                          <li id="carousel__slide2"
+                              tabindex="2"
+                              class="carousel__slide">
+                            <img src ='images/DMD/ImportScreen.png' class='content'/>
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide1"
+                               class="carousel__prev">Go to previous slide</a>
+                            <a href="#carousel__slide3"
+                               class="carousel__next">Go to next slide</a>
+                          </li>
+                          <li id="carousel__slide3"
+                              tabindex="3"
+                              class="carousel__slide">
+                            <img src ='images/DMD/Users.png' class='content'/>
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide2"
+                               class="carousel__prev">Go to previous slide</a>
+                            <a href="#carousel__slide4"
+                               class="carousel__next">Go to next slide</a>
+                          </li>
+                          <li id="carousel__slide4"
+                              tabindex="4"
+                              class="carousel__slide">
+                            <img src ='images/DMD/QuickCreate.png' class='content'/>
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide3"
+                               class="carousel__prev">Go to previous slide</a>
+                            <a href="#carousel__slide1"
+                               class="carousel__next">Go to first slide</a>
+                          </li>
+                        </ol>
+                      </div>
+                </div>
+            </div>
+        </article>
         <article id='hawkins'>
             <div class='article-logo'>
-                <img src='HawkinsLogo.png'>
+                <img src='./images/Hawkins/Logo.png'>
             </div>
             <div class='article-graphics'>
                 <div class="laptop">
-                    <img class='laptop-image' src='laptop.png' />
-                    <img class='site-image' src='hawkins.png' />
+                    <img class='laptop-image' src='images/laptop.png' />
+                    <div class="carousel" aria-label="Gallery">
+                        <ol class="carousel__viewport">
+                          <li id="carousel__slide1"
+                              tabindex="0"
+                              class="carousel__slide">
+                            <img src ='images/Hawkins/Home.png' class='content'/>
+                            <div class="carousel__snapper">
+                              <a href="#carousel__slide4"
+                                 class="carousel__prev">Go to last slide</a>
+                              <a href="#carousel__slide2"
+                                 class="carousel__next">Go to next slide</a>
+                            </div>
+                          </li>
+                          <li id="carousel__slide2"
+                              tabindex="0"
+                              class="carousel__slide">
+                            <video autoplay muted loop class='content' src="images/Hawkins/Scroll.mp4" type="video/mp4" />
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide1"
+                               class="carousel__prev">Go to previous slide</a>
+                            <a href="#carousel__slide3"
+                               class="carousel__next">Go to next slide</a>
+                          </li>
+                          <li id="carousel__slide3"
+                              tabindex="0"
+                              class="carousel__slide">
+                              <img src ='images/Hawkins/Dashboard.png' class='content' />
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide2"
+                               class="carousel__prev">Go to previous slide</a>
+                            <a href="#carousel__slide4"
+                               class="carousel__next">Go to next slide</a>
+                          </li>
+                          <li id="carousel__slide4"
+                              tabindex="0"
+                              class="carousel__slide">
+                              <video autoplay muted loop src="images/Hawkins/Onboard.mp4" type="video/mp4">
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide3"
+                               class="carousel__prev">Go to previous slide</a>
+                            <a href="#carousel__slide5"
+                               class="carousel__next">Go to next slide</a>
+                          </li>
+                          <li id="carousel__slide5"
+                          tabindex="0"
+                          class="carousel__slide">
+                          <img src ='images/Hawkins/ProjectModal.png' class='content'/>
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide4"
+                           class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide1"
+                           class="carousel__next">Go to first slide</a>
+                      </li>
+                        </ol>
+                      </div>
                 </div>
             </div>
             <div class='article-info'>
                 <p>
-                    Hawkins.png was built for a client of mine who runs a photography editing business.
-                    He needed a way to streamline his process of onboarding new clients and providing 
-                    editing services through project assignments to his staff of editors. For him I
-                    created an SPA that handles file uploads, downloads and permissions management.
+                    H<a href='https://www.hawkinspng.com'>awkins.png</a> is a photography editing business based in Los Angeles, California.
+                    Shawn came to me with a needed for a way to streamline his process of onboarding new clients and providing 
+                    editing services. At the time, everything was handled manually - catalogs were uploaded to Shawn's drive account, and 
+                    project management was just simply email correspondence between Shawn and his clients and editors. 
                 </p>
                 <p>
-                    Clients are taken through the project creation process by picking packages options and then are prompted
-                    to upload their files. A project can then be assigned to an editor, who can download the files, make
-                    their edits, and reupload for approval. Upon approval, a notification is sent to the client that they
-                    can now download the edited files.
+                    For Shawn, I created a project management and file-sharing application. Clients are taken through the project creation process where they
+                    pick package options and then upload their catalog as a zip file. Projects are then assigned to an editor and follow a lifecycle from editing
+                    to review to approval and delivery. Email notifications are automatically sent to applicable parties at certain lifecycle waypoints. A newer
+                    feature has new project notifications being sent to Slack, where editors can claim unassigned projects through interaction with a bot. 
+                    This application was built on MERN stack with the following APIs: Google Drive, Google Workspace email via <a href='https://www.npmjs.com/package/nodemailer'>nodemailer</a>,
+                    and Slack.
                 </p>
-            </div>
-            <div class='article-icons'>
-                <a href='https://www.hawkinspng.com' target='_blank'><i class="fa fa-laptop"></i></a>
-                <i class="fa fa-film"></i>
-            </div>
-        </article>
-        <article id='toodfrucks'>
-            <div class='article-logo'>
-                <img  src='toodfruckslogo.png'>
-            </div>
-            <div class='article-info'>
-                <p>
-                    ToodFrucks is an SPA with the goal of promoting the food truck industry. Its objective is to give food truck
-                    owners the ability to connect with consumers. Through the app, food trucks are able to share their
-                    present location and hours, as well as future locations. Consumers are able to locate trucks in their area,
-                    and search using keywords or cusine types.
+                <p class='testimonial'>
+                    "There isn’t enough praise that I can throw Brad’s way throughout the entirety of the development process. Simply put, working with FlashSpark Media has been an indelible process from the ground up. Brad helped me seamlessly build my project into a fully functional and efficiently running website, which was no small task with the asks and requirements needed to get exactly what I was looking for out of Hawkins.png. Communication was consistent, Brad was accessible and a true ease to work with. And I’m now left with a site beyond my expectations that has left myself and my entire clientele in awe and at ease. No need to search any further for all of your web development needs, no matter how in depth. Brad is the man!”
+                    <em>- Shawn Hawkins, Owner/Editor at Hawkins.png</em>
                 </p>
-                <p>
-                   ToodFrucks is in continuous development. Due to the current world conditions, an official launch isn't yet planned, but
-                   a demo is available online. You'll find links below that log you in as either a consumer or a merchant. Long-term plans
-                   include online ordering, and possibly integration with food delivery services such as Doordash and Postmates.
-                </p>
-            </div>
-            <div class='article-graphics article-right-graphics'>
-                <div class="laptop">
-                    <img class='laptop-image' src='laptop.png' />
-                    <img class='site-image' src='toodfrucks.png' />
-                </div>
-            </div>
-            <div class='article-icons'>
-                <a href="http://www.toodfrucks.com" target='_blank' ><i class="fa fa-laptop" ></i></a>
-                <i class="fa fa-film"></i>
-                <a href='https://github.com/brumack/TF' target='_blank'><i class="fa fa-github"></i></a>
-            </div>
-        </article>
-        <article id='binance'>
-            <div class='article-logo' >
-                <img src='bitcoin.png'>
-            </div>
-            <div class='article-info'>
-                <p>
-                    A while ago I started experimenting with automated cryptocurrency trading. I'd frequently build and rebuild bots
-                    to try new strategies. I'd make some money, lose some money, and then reevaluate. I went through this process 
-                    many times. I finally came up with a winning solution, with a success rate around 75% - 80%. 
-                </p>
-                <p>
-                    For a couple months it was even paying my rent.
-                    Then the market tanked and altcoins were poison so I shut it down. I occassionally dabble, trying find a new set of conditions that
-                    work for the current environment. You'll find my Github repo linked. I've ommitted the particular conditions I coded in.
-                </p>
-            </div>
-            <div class='article-graphics article-right-graphics'>
-                <div class="laptop">
-                    <img class='laptop-image' src='laptop.png' />
-                    <img class='site-image' src='binance.png' />
-                </div>
-            </div>
-            <div class='article-icons'>
-                <a href='https://github.com/brumack/netBot' target='_blank'><i class="fa fa-github"></i></a>
             </div>
         </article>
     </section>
@@ -139,18 +213,26 @@
         <article>
             <a name='about'></a>
             <div class='article-info'>
-                <p>
-                    I have been writing code for over 4 years and I honestly wish I had started sooner. It's definitely
-                    my life's calling. I started my own business in summer of 2019 as a web app developer and consultant.
-                    I've also recently worked in a live ops role for Doordash, where I developed some significant internal tooling
-                    for my team. <br><br> Prior, I worked on a cryptocurrency trading platform as a contract back end engineer. While I've mainly
-                    worked in Javascript and Node.js, I'd like to consider myself language-agnostic. I'm happy and eager to
-                    teach myself anything I don't already know to get something done and done well.
-                </p>
+                <div class='paragraphs'>
+                    <p>
+                        I have been writing code since 2016. I started my own business in summer of 2019 as 
+                        a web appplication developer and consultant under my company name, FlashSpark Media. My LLC was formed early 2021.
+                    </p>
+                    <p>                    I specialize in small-business applications designed to streamline workflows and reduce overhead. I have experience in myriad
+                        technolgies, including but not limted to: HTML, CSS, JavaScript, React, NodeJS, MonogDB, API Integration, several CSS libraries 
+                        (Bootstrap, Semantic UI, Materal-UI), Redis, Chrome extension development, and Python.
+                    </p>
+                    <p>
+                        In my free time, when I'm not working on personal projects, I enjoy going to the beach, exploring new areas,
+                        and spending time with friends. I'm also a web3 enthusiast (the world of cryptocurrency and distrbiuted trustless services)
+                        and am currently exploring various
+                        techologies in the space. 
+                    </p>
+                </div>
                 <ul>
                     <li>
                         <div class='job'>
-                            <i class="fa fa-laptop"></i>
+                            <img src='images/FlashSparkLogo.png'>
                             <div class='job-info'>
                                 <h4>FlashSpark Media</h4>
                                 <span>Owner/Engineer, August 2019 - current</span>
@@ -160,7 +242,7 @@
                     </li>
                     <li>
                         <div class='job'>
-                            <i class="fa fa-laptop"></i>
+                            <img src='images/DoorDashLogo.jpeg'>
                             <div class='job-info'>
                                 <h4>Doordash</h4>
                                 <span>Live Operations, June 2019 - Feb 2020</span>
@@ -170,7 +252,7 @@
                     </li>
                     <li>
                         <div class='job'>
-                           <i class="fa fa-laptop"></i>
+                            <img src='images/BitcoinLogo.png'>
                             <div>
                                 <h4>Valid Strategy</h4>
                                 <span>Contract Back End Engineer, June 2018-October 2018</span>
@@ -189,7 +271,7 @@
         </article>
     </section>
     <section id='contact'>
-        <div class='section-header right-header'>
+        <div class='section-header  right-header'>
             <h3>Contact</h3>
             <a name='contact'></a>
         </div>
@@ -212,9 +294,8 @@
         </article>
     </section>
     <footer>
-        <p>©2020 BradRumack.com | All Rights Reserved</p>
+        <p>©2021 FlashSpark Media, LLC</p>
     </footer>
-
     <script src='index.js'></script>
 </body>
 </html>
