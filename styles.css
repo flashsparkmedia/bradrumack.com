@@ -363,6 +363,8 @@ section .article-icons i {
 	width: 25%;
 }
 
+
+
 /* -- Contact Section -- */
 
 #contact h4 {
@@ -375,6 +377,10 @@ section .article-icons i {
 	width: 50%;
 	margin: 0 auto;
 	grid-template-columns: 100%;
+}
+
+#contact > article > div.article-info > p > a {
+	color: #c00101 !important;
 }
 
 #contact p::first-letter {
