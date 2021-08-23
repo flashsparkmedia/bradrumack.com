@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136380922-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-136380922-1');
+        gtag('config', 'UA-136380922-1');
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brad Rumack | Software Developer</title>
-    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
-    <link rel='stylesheet' type='text/css' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' />
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
+    <link rel='stylesheet' type='text/css'
+        href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' />
     <link rel='stylesheet' type='text/css' href='./normalize.css' />
     <link rel='stylesheet' type='text/css' href='./carousel.css' />
     <link rel='stylesheet' type='text/css' href='./styles.css' />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav>
             <ul id='navbar' role="navigation">
-                <li id='logo'><img src='images/Logo.png'/></a></li>
+                <li id='logo'><img src='images/Logo.png' /></a></li>
                 <li class='nav-item'><a href='#projects'>Client Builds</a></li>
-                <li class='nav-item'><a href='#personal'>Personal Projects</a></li>
                 <li class='nav-item'><a href='#about'>About Me</a></li>
                 <li class='nav-item'><a href='#contact'>Contact</a></li>
+                <div class='article-icons'>
+                    <a href='https://github.com/brumack' target='_blank'><i class="fa fa-github"></i></a>
+                    <a href='mailto:brad@flashspark.io' target='_blank'><i class="fa fa-envelope"></i></a>
+                    <a href='https://www.linkedin.com/in/bradleyrumack/' target='_blank'><i class="fa fa-linkedin"></i></a>
+                </div>
             </ul>
         </nav>
         <div id='hero'>
@@ -38,7 +45,7 @@
                 <h1>Brad Rumack</h1>
                 <h2>Full Stack <span>Engineer</span></h3>
             </div>
-            <img src='images/Logo.png'/>
+            <img src='images/Logo.png' />
         </div>
     </header>
     <section id='projects'>
@@ -48,25 +55,35 @@
         <a name='projects'></a>
         <article id='dmdsystems'>
             <div class='article-logo'>
-                <img  src='https://ship.dmdsystems.com/images/logo.webp'>
+                <img src='https://ship.dmdsystems.com/images/logo.webp'>
             </div>
             <div class='article-info'>
                 <p>
-                    "DMD (<a href='https://www.dmdsystems.com/en-us/home' target='_blank'>DMD Systems</a>) provides ITAD solutions adhering to the most rigorous environmental and security standards to deliver confidence for 
-                    companies who value our world and their reputation. DMD works with hundreds of companies and public entities to securely 
-                    destroy their data, decommission assets, and redeploy or remarket the equipment across IT categories including Data Center, 
+                    "DMD (<a href='https://www.dmdsystems.com/en-us/home' target='_blank'>DMD Systems</a>) provides ITAD
+                    solutions adhering to the most rigorous environmental and security standards to deliver confidence
+                    for
+                    companies who value our world and their reputation. DMD works with hundreds of companies and public
+                    entities to securely
+                    destroy their data, decommission assets, and redeploy or remarket the equipment across IT categories
+                    including Data Center,
                     End User Compute, and Mobility."
                 </p>
                 <p>
-                    DMD had recently launched a new product, but soon realized that their shipping processes currently in place didn't scale to
-                    fit this new product's needs. They came to me seeking a way to integrate round-trip shipping into ShipStation's API, and then allow
-                    end-users the ability to track their shipment both to them and then back to DMD. DMD's clients can also generate company-wide
-                    containing all users' shipments. Data from their sales system is imported into the application via CSV, then shipping labels for both directions
-                    are automatically generated and and provided via PDF for easy printing. 
+                    DMD had recently launched a new product, but soon realized that their shipping processes currently
+                    in place didn't scale to
+                    fit this new product's needs. They came to me seeking a way to integrate round-trip shipping into
+                    ShipStation's API, and then allow
+                    end-users the ability to track their shipment both to them and then back to DMD. DMD's clients can
+                    also generate company-wide
+                    containing all users' shipments. Data from their sales system is imported into the application via
+                    CSV, then shipping labels for both directions
+                    are automatically generated and and provided via PDF for easy printing.
                 </p>
                 <p>
-                    This application was built on MERN+Redux stack with the following APIs: Google oAuth2, ShipStation, OpenCage, Outlook via
-                    <a href='https://www.npmjs.com/package/nodemailer'>nodemailer</a>, UPS, and FedEx via <a href='https://www.npmjs.com/package/delivery-tracker'>delivery-tracker</a>
+                    This application was built on MERN+Redux stack with the following APIs: Google oAuth2, ShipStation,
+                    OpenCage, Outlook via
+                    <a href='https://www.npmjs.com/package/nodemailer'>nodemailer</a>, UPS, and FedEx via <a
+                        href='https://www.npmjs.com/package/delivery-tracker'>delivery-tracker</a>
                 </p>
             </div>
             <div class='article-graphics article-right-graphics'>
@@ -74,49 +91,24 @@
                     <img class='laptop-image' src='images/laptop.png' />
                     <div class="carousel" aria-label="Gallery">
                         <ol class="carousel__viewport">
-                          <li id="carousel__slide1"
-                              tabindex="1"
-                              class="carousel__slide">
-                            <img src ='images/DMD/Dashboard.png' class='content'>
-                            <div class="carousel__snapper">
-                              <a href="#carousel__slide4"
-                                 class="carousel__prev">Go to last slide</a>
-                              <a href="#carousel__slide1"
-                                 class="carousel__next">Go to next slide</a>
-                            </div>
-                          </li>
-                          <li id="carousel__slide2"
-                              tabindex="2"
-                              class="carousel__slide">
-                            <img src ='images/DMD/ImportScreen.png' class='content'/>
-                            <div class="carousel__snapper"></div>
-                            <a href="#carousel__slide1"
-                               class="carousel__prev">Go to previous slide</a>
-                            <a href="#carousel__slide3"
-                               class="carousel__next">Go to next slide</a>
-                          </li>
-                          <li id="carousel__slide3"
-                              tabindex="3"
-                              class="carousel__slide">
-                            <img src ='images/DMD/Users.png' class='content'/>
-                            <div class="carousel__snapper"></div>
-                            <a href="#carousel__slide2"
-                               class="carousel__prev">Go to previous slide</a>
-                            <a href="#carousel__slide4"
-                               class="carousel__next">Go to next slide</a>
-                          </li>
-                          <li id="carousel__slide4"
-                              tabindex="4"
-                              class="carousel__slide">
-                            <img src ='images/DMD/QuickCreate.png' class='content'/>
-                            <div class="carousel__snapper"></div>
-                            <a href="#carousel__slide3"
-                               class="carousel__prev">Go to previous slide</a>
-                            <a href="#carousel__slide1"
-                               class="carousel__next">Go to first slide</a>
-                          </li>
+                            <li id="carousel__slide1" tabindex="1" class="carousel__slide">
+                                <img src='images/DMD/Dashboard.png' class='content'>
+                                <div class="carousel__snapper"></div>
+                            </li>
+                            <li id="carousel__slide2" tabindex="2" class="carousel__slide">
+                                <img src='images/DMD/ImportScreen.png' class='content' />
+                                <div class="carousel__snapper"></div>
+                            </li>
+                            <li id="carousel__slide3" tabindex="3" class="carousel__slide">
+                                <img src='images/DMD/Users.png' class='content' />
+                                <div class="carousel__snapper"></div>
+                            </li>
+                            <li id="carousel__slide4" tabindex="4" class="carousel__slide">
+                                <img src='images/DMD/QuickCreate.png' class='content' />
+                                <div class="carousel__snapper"></div>
+                            </li>
                         </ol>
-                      </div>
+                    </div>
                 </div>
             </div>
         </article>
@@ -129,78 +121,63 @@
                     <img class='laptop-image' src='images/laptop.png' />
                     <div class="carousel" aria-label="Gallery">
                         <ol class="carousel__viewport">
-                          <li id="carousel__slide1"
-                              tabindex="0"
-                              class="carousel__slide">
-                            <img src ='images/Hawkins/Home.png' class='content'/>
-                            <div class="carousel__snapper">
-                              <a href="#carousel__slide4"
-                                 class="carousel__prev">Go to last slide</a>
-                              <a href="#carousel__slide2"
-                                 class="carousel__next">Go to next slide</a>
-                            </div>
-                          </li>
-                          <li id="carousel__slide2"
-                              tabindex="0"
-                              class="carousel__slide">
-                            <video autoplay muted loop class='content' src="images/Hawkins/Scroll.mp4" type="video/mp4" />
-                            <div class="carousel__snapper"></div>
-                            <a href="#carousel__slide1"
-                               class="carousel__prev">Go to previous slide</a>
-                            <a href="#carousel__slide3"
-                               class="carousel__next">Go to next slide</a>
-                          </li>
-                          <li id="carousel__slide3"
-                              tabindex="0"
-                              class="carousel__slide">
-                              <img src ='images/Hawkins/Dashboard.png' class='content' />
-                            <div class="carousel__snapper"></div>
-                            <a href="#carousel__slide2"
-                               class="carousel__prev">Go to previous slide</a>
-                            <a href="#carousel__slide4"
-                               class="carousel__next">Go to next slide</a>
-                          </li>
-                          <li id="carousel__slide4"
-                              tabindex="0"
-                              class="carousel__slide">
-                              <video autoplay muted loop src="images/Hawkins/Onboard.mp4" type="video/mp4">
-                            <div class="carousel__snapper"></div>
-                            <a href="#carousel__slide3"
-                               class="carousel__prev">Go to previous slide</a>
-                            <a href="#carousel__slide5"
-                               class="carousel__next">Go to next slide</a>
-                          </li>
-                          <li id="carousel__slide5"
-                          tabindex="0"
-                          class="carousel__slide">
-                          <img src ='images/Hawkins/ProjectModal.png' class='content'/>
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide4"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide1"
-                           class="carousel__next">Go to first slide</a>
-                      </li>
+                            <li id="hawkins_carousel__slide1" tabindex="1" class="carousel__slide">
+                                <div class="carousel__snapper"></div>
+                                <img src='images/Hawkins/Home.png' class='content' />
+                            </li>
+                            <li id="hawkins_carousel__slide2" tabindex="2" class="carousel__slide">
+                                <div class="carousel__snapper"></div>
+                                <video autoplay muted loop class='content' src="images/Hawkins/Scroll.mp4"
+                                    type="video/mp4" />
+                            </li>
+                            <li id="hawkins_carousel__slide3" tabindex="3" class="carousel__slide">
+                                <div class="carousel__snapper"></div>
+                                <img src='images/Hawkins/Dashboard.png' class='content' />
+                            </li>
+                            <li id="hawkins_carousel__slide4" tabindex="4" class="carousel__slide">
+                                <div class="carousel__snapper"></div>
+                                <video autoplay muted loop src="images/Hawkins/Onboard.mp4" type="video/mp4">
+                            </li>
+                            <li id="hawkins_carousel__slide5" tabindex="5" class="carousel__slide">
+                                <div class="carousel__snapper"></div>
+                                <img src='images/Hawkins/ProjectModal.png' class='content' />
+                            </li>
                         </ol>
-                      </div>
+                    </div>
                 </div>
             </div>
             <div class='article-info'>
                 <p>
-                    H<a href='https://www.hawkinspng.com'>awkins.png</a> is a photography editing business based in Los Angeles, California.
-                    Shawn came to me with a needed for a way to streamline his process of onboarding new clients and providing 
-                    editing services. At the time, everything was handled manually - catalogs were uploaded to Shawn's drive account, and 
-                    project management was just simply email correspondence between Shawn and his clients and editors. 
+                    H<a href='https://www.hawkinspng.com'>awkins.png</a> is a photography editing business based in Los
+                    Angeles, California.
+                    Shawn came to me with a needed for a way to streamline his process of onboarding new clients and
+                    providing
+                    editing services. At the time, everything was handled manually - catalogs were uploaded to Shawn's
+                    drive account, and
+                    project management was just simply email correspondence between Shawn and his clients and editors.
                 </p>
                 <p>
-                    For Shawn, I created a project management and file-sharing application. Clients are taken through the project creation process where they
-                    pick package options and then upload their catalog as a zip file. Projects are then assigned to an editor and follow a lifecycle from editing
-                    to review to approval and delivery. Email notifications are automatically sent to applicable parties at certain lifecycle waypoints. A newer
-                    feature has new project notifications being sent to Slack, where editors can claim unassigned projects through interaction with a bot. 
-                    This application was built on MERN stack with the following APIs: Google Drive, Google Workspace email via <a href='https://www.npmjs.com/package/nodemailer'>nodemailer</a>,
+                    For Shawn, I created a project management and file-sharing application. Clients are taken through
+                    the project creation process where they
+                    pick package options and then upload their catalog as a zip file. Projects are then assigned to an
+                    editor and follow a lifecycle from editing
+                    to review to approval and delivery. Email notifications are automatically sent to applicable parties
+                    at certain lifecycle waypoints. A newer
+                    feature has new project notifications being sent to Slack, where editors can claim unassigned
+                    projects through interaction with a bot.
+                    This application was built on MERN stack with the following APIs: Google Drive, Google Workspace
+                    email via <a href='https://www.npmjs.com/package/nodemailer'>nodemailer</a>,
                     and Slack.
                 </p>
                 <p class='testimonial'>
-                    "There isn’t enough praise that I can throw Brad’s way throughout the entirety of the development process. Simply put, working with FlashSpark Media has been an indelible process from the ground up. Brad helped me seamlessly build my project into a fully functional and efficiently running website, which was no small task with the asks and requirements needed to get exactly what I was looking for out of Hawkins.png. Communication was consistent, Brad was accessible and a true ease to work with. And I’m now left with a site beyond my expectations that has left myself and my entire clientele in awe and at ease. No need to search any further for all of your web development needs, no matter how in depth. Brad is the man!”
+                    "There isn’t enough praise that I can throw Brad’s way throughout the entirety of the development
+                    process. Simply put, working with FlashSpark Media has been an indelible process from the ground up.
+                    Brad helped me seamlessly build my project into a fully functional and efficiently running website,
+                    which was no small task with the asks and requirements needed to get exactly what I was looking for
+                    out of Hawkins.png. Communication was consistent, Brad was accessible and a true ease to work with.
+                    And I’m now left with a site beyond my expectations that has left myself and my entire clientele in
+                    awe and at ease. No need to search any further for all of your web development needs, no matter how
+                    in depth. Brad is the man!”
                     <em>- Shawn Hawkins, Owner/Editor at Hawkins.png</em>
                 </p>
             </div>
@@ -215,18 +192,23 @@
             <div class='article-info'>
                 <div class='paragraphs'>
                     <p>
-                        I have been writing code since 2016. I started my own business in summer of 2019 as 
-                        a web appplication developer and consultant under my company name, FlashSpark Media. My LLC was formed early 2021.
+                        I have been writing code since 2016. I started my own business in summer of 2019 as
+                        a web appplication developer and consultant under my company name, FlashSpark Media. My LLC was
+                        formed early 2021.
                     </p>
-                    <p>                    I specialize in small-business applications designed to streamline workflows and reduce overhead. I have experience in myriad
-                        technolgies, including but not limted to: HTML, CSS, JavaScript, React, NodeJS, MonogDB, API Integration, several CSS libraries 
+                    <p> I specialize in small-business applications designed to streamline workflows and reduce
+                        overhead. I have experience in myriad
+                        technolgies, including but not limted to: HTML, CSS, JavaScript, React, NodeJS, MonogDB, API
+                        Integration, several CSS libraries
                         (Bootstrap, Semantic UI, Materal-UI), Redis, Chrome extension development, and Python.
                     </p>
                     <p>
-                        In my free time, when I'm not working on personal projects, I enjoy going to the beach, exploring new areas,
-                        and spending time with friends. I'm also a web3 enthusiast (the world of cryptocurrency and distrbiuted trustless services)
+                        In my free time, when I'm not working on personal projects, I enjoy going to the beach,
+                        exploring new areas,
+                        and spending time with friends. I'm also a web3 enthusiast (the world of cryptocurrency and
+                        distrbiuted trustless services)
                         and am currently exploring various
-                        techologies in the space. 
+                        techologies in the space.
                     </p>
                 </div>
                 <ul>
@@ -236,7 +218,8 @@
                             <div class='job-info'>
                                 <h4>FlashSpark Media</h4>
                                 <span>Owner/Engineer, August 2019 - current</span>
-                                <p>Creating highly-functional business applications to solve problems, and improve processes to promote growth.</p>
+                                <p>Creating highly-functional business applications to solve problems, and improve
+                                    processes to promote growth.</p>
                             </div>
                         </div>
                     </li>
@@ -246,7 +229,8 @@
                             <div class='job-info'>
                                 <h4>Doordash</h4>
                                 <span>Live Operations, June 2019 - Feb 2020</span>
-                                <p>Developed significant internal tooling to greatly enhance team productivity, accuracy and efficiency.</p>
+                                <p>Developed significant internal tooling to greatly enhance team productivity, accuracy
+                                    and efficiency.</p>
                             </div>
                         </div>
                     </li>
@@ -256,7 +240,8 @@
                             <div>
                                 <h4>Valid Strategy</h4>
                                 <span>Contract Back End Engineer, June 2018-October 2018</span>
-                                <p>Developed automated cryptocurrency trading platform, utilizing web scraping, textual and statistical analysis, 
+                                <p>Developed automated cryptocurrency trading platform, utilizing web scraping, textual
+                                    and statistical analysis,
                                     and numerous cryptocurrency exchange APIs
                                 </p>
                             </div>
@@ -276,14 +261,14 @@
             <a name='contact'></a>
         </div>
         <article>
-            <div class='article-logo' >
+            <div class='article-logo'>
                 <h4>Let's build something!</h4>
             </div>
             <div class='article-info'>
                 <p>
                     I'm available for consulting as well as development. If you have questions about
-                    how technology can make your business more successful, I'm happy to offer my expertise. 
-                    Questions cost nothing, and I can talk about this stuff forever. You can reach me via 
+                    how technology can make your business more successful, I'm happy to offer my expertise.
+                    Questions cost nothing, and I can talk about this stuff forever. You can reach me via
                     email or linkedIn via the icons below, or by phone at <a href="tel:1-480-599-5214">480-599-5214</a>.
                 </p>
             </div>
@@ -298,4 +283,5 @@
     </footer>
     <script src='index.js'></script>
 </body>
+
 </html>

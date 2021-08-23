@@ -50,7 +50,22 @@ p {
 	width: 100%;
 	height: 100px;
 	align-items: center;
-	padding-top: 20px;
+	padding: 20px;
+}
+
+#navbar .article-icons {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	margin-left: auto;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0 20px 0 auto;
+	width: auto;
+}
+
+#navbar .article-icons i {
+	color: #fff;
 }
 
 #navbar a {
@@ -65,7 +80,7 @@ p {
 }
 
 #logo img {
-	height: 100px;
+	height: 80px;
 }
 
 #hero {
@@ -220,7 +235,7 @@ article:nth-child(odd) .article-icons i:hover {
 }
 
 #projects .laptop {
-	width: 90%;
+	width: 80%;
 	min-width: 300px;
 	position: relative;
 	right: 3px;
@@ -249,6 +264,11 @@ article:nth-child(odd) .article-icons i:hover {
 
 #hawkins .article-info a {
 	color: #3f6150;
+}
+
+section .article-icons a,
+section .article-icons i {
+	background: rgba(0, 0, 0, 0);
 }
 
 /* -- Personal Sections -- */
@@ -453,7 +473,20 @@ footer p {
 	z-index: 3;
 }
 
-@media only screen and (max-width: 1250px) {
+/* @media only screen and (max-width: 1250px) {
+
+	section .article-info,
+	section .article-graphics,
+	#about .article-info,
+	#about .article-graphics {
+		width: 100%;
+	}
+
+	#projects .laptop {
+		width: 60%;
+		margin-bottom: 20px;
+	}
+
 	#about .article-info {
 		width: 100%;
 		flex-direction: column;
@@ -474,18 +507,11 @@ footer p {
 	#about .article-info ul {
 		margin-top: 20px;
 	}
-}
+} */
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1250px) {
 	.section-header h3 {
 		font-size: 70px;
-	}
-
-	section .article-info,
-	section .article-graphics,
-	#about .article-info,
-	#about .article-graphics {
-		width: 100%;
 	}
 
 	section .article-logo {
@@ -500,10 +526,17 @@ footer p {
 
 	section .article-graphics {
 		order: 2;
+		margin: 20px auto;
 	}
 
 	section .article-icons {
 		order: 4;
+	}
+
+	.article-info,
+	.article-logo {
+		width: 80% !important;
+		margin: auto !important;
 	}
 
 
@@ -515,9 +548,7 @@ footer p {
 	.modal {
 		width: 800px;
 	}
-}
 
-@media only screen and (max-width: 735px) {
 	#navbar li {
 		padding: 0 10px;
 	}
@@ -526,6 +557,7 @@ footer p {
 	.right-header h3 {
 		margin: 0 auto;
 		font-size: 40px;
+		text-align: center;
 	}
 
 	section .article-info {
@@ -541,16 +573,16 @@ footer p {
 	}
 
 	#about .article-info {
-		width: 100%;
 		flex-direction: column;
 		align-items: center;
 	}
 
 	#about .article-info .paragraphs,
 	#about .article-info ul {
+		display: flex;
 		flex-direction: column;
-		align-items: center;
 		width: 90%;
+		gap: 20px;
 	}
 
 	#about .article-info .paragraphs p {
@@ -561,8 +593,10 @@ footer p {
 		margin-top: 20px;
 	}
 
-	#contact .article-info {
+	.article-info,
+	.article-logo {
 		width: 80%;
+		margin: auto;
 	}
 
 	#contact p a {
@@ -575,16 +609,31 @@ footer p {
 	}
 
 	#about .job {
-		grid-template-columns: 23% 77%;
+		grid-template-columns: 15% 77%;
 	}
 
 	#about .job i {
 		font-size: 35px;
 	}
+}
+
+@media only screen and (max-width: 768px) {
+	#about .job {
+		grid-template-columns: 35% 65%;
+	}
+
+	#about .job p {
+		margin-left: 0;
+	}
+
+	#navbar .article-icons {
+		margin-right: 50px;
+	}
 
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 540px) {
+
 	#hero h1 {
 		font-size: 60px;
 		line-height: 50px;
@@ -596,5 +645,13 @@ footer p {
 		transform-origin: right;
 		position: relative;
 		bottom: 110px;
+	}
+
+	#navbar li a {
+		font-size: .8rem;
+	}
+
+	#navbar .article-icons {
+		display: none;
 	}
 }

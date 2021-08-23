@@ -30,15 +30,11 @@ document.addEventListener('DOMContentLoaded', e => {
     })
 
     for (const item of content) {
-        item.addEventListener('click', e => {
-            console.log(e.target)
-            showModal(e.target.src, e.target.nodeName)
-        })
+        item.addEventListener('click', e => showModal(e.target.src, e.target.nodeName))
     }
 })
 
 const showModal = (src, type) => {
-    console.log(src)
     const body = document.querySelector('body')
     const modal = document.createElement('div')
     const content = document.createElement(type.toLowerCase())
