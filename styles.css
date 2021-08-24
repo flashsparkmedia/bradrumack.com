@@ -668,19 +668,70 @@ footer p {
 
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 500px) {
 
 	#hero h1 {
 		font-size: 60px;
 		line-height: 50px;
-		margin-right: 14px;
+		margin-right: 55px;
 	}
 
 	#hero h2 {
 		transform: rotate(-90deg);
 		transform-origin: right;
 		position: relative;
-		bottom: 110px;
+		bottom: 130px;
+		width: 290px;
+	}
+
+	#navbar li a {
+		font-size: .8rem;
+	}
+
+	#navbar .article-icons {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+
+	#hero h1 {
+		font-size: 60px;
+		line-height: 50px;
+		margin-right: 0;
+	}
+
+	#hero h2 {
+		transform: rotate(0deg);
+		position: relative;
+		bottom: 0;
+		width: 265px;
+	}
+
+	#navbar li a {
+		font-size: .8rem;
+	}
+
+	#navbar .article-icons {
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 375px) {
+
+	#hero h1 {
+		font-size: 60px;
+		line-height: 50px;
+		/* margin-right: 5px; */
+	}
+
+	#hero h2 {
+		transform: rotate(0deg);
+		position: relative;
+		bottom: 0;
+		width: 240px;
+		margin-left: 5px;
 	}
 
 	#navbar li a {
