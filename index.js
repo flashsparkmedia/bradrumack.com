@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', e => {
     const aboutSection = document.getElementById('about')
     const contact = document.querySelector('a[href="#contact"]')
     const contactSection = document.getElementById('contact')
-    const hawkinsFilmIcon = document.querySelector('#hawkins .article-icons .fa.fa-film')
+    const ProTrackProjectVideo = document.getElementById('protrack_carousel__slide2')
     const content = document.querySelectorAll('.content')
 
     projects.addEventListener('click', e => {
@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', e => {
         })
     })
 
+    ProTrackProjectVideo.addEventListener('click' , showVideo)
+
     for (const item of content) {
         item.addEventListener('click', e => showModal(e.target.src, e.target.nodeName))
     }
@@ -45,5 +47,20 @@ const showModal = (src, type) => {
 
     modal.appendChild(content)
     console.log(modal)
+    body.appendChild(modal)
+}
+
+const showVideo = () => {
+    const body = document.querySelector('body')
+    const modal = document.createElement('div')
+    const content = document.createElement('video')
+    content.controls = true
+    content.autoplay = true
+    content.src = 'images/ProTrack/Demo.mov'
+
+    modal.id = 'modal'
+    modal.addEventListener('click', () => modal.parentElement.removeChild(modal))
+
+    modal.appendChild(content)
     body.appendChild(modal)
 }
