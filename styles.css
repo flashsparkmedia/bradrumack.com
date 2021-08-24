@@ -239,6 +239,10 @@ article:nth-child(odd) .article-icons i:hover {
 	right: 3px;
 }
 
+#flashspark a {
+	color: #000;
+}
+
 .laptop-image {
 	position: relative;
 }
@@ -269,10 +273,6 @@ article:nth-child(odd) .article-icons i:hover {
 	min-width: 300px;
 	position: relative;
 	right: 3px;
-}
-
-.laptop-image {
-	position: relative;
 }
 
 .testimonial {
