@@ -92,6 +92,10 @@
 	width: 100%;
 	counter-increment: item;
   }
+
+  .carousel__slide:hover {
+	  cursor: pointer;
+  }
   
   .carousel__slide:before {
 	position: absolute;
