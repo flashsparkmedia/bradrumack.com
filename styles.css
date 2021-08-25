@@ -509,6 +509,10 @@ footer p {
 	z-index: 3;
 }
 
+/* .hide-desktop {
+	display: none;
+} */
+
 /* @media only screen and (max-width: 1250px) {
 
 	section .article-info,
@@ -746,5 +750,9 @@ footer p {
 @media (pointer:none), (pointer:coarse) {
 	.hide-mobile{
 		display: none;
-	} 
+	}
+	
+	/* .hide-desktop {
+		display: block;
+	} */
 }
