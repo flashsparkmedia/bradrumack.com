@@ -742,3 +742,9 @@ footer p {
 		display: none;
 	}
 }
+
+@media (pointer:none), (pointer:coarse) {
+	.hide-mobile{
+		display: none;
+	} 
+}
