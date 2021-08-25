@@ -27,13 +27,13 @@
   
   @keyframes snap {
 	98% {
-		scroll-snap-align: center;
+	  scroll-snap-align: start;
 	}
 	99% {
 	  scroll-snap-align: none;
 	}
 	100% {
-	  scroll-snap-align: center;
+	  scroll-snap-align: end;
 	}
   }
 
