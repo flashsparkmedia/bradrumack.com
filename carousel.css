@@ -27,13 +27,16 @@
   
   @keyframes snap {
 	98% {
-	  scroll-snap-align: start;
+	  scroll-snap-align: center;
 	}
+	/* 97% {
+	  scroll-snap-align: none;
+	} */
 	99% {
 	  scroll-snap-align: none;
 	}
 	100% {
-	  scroll-snap-align: end;
+	  scroll-snap-align: center;
 	}
   }
 
