@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', e => {
     const contact = document.querySelector('a[href="#contact"]')
     const contactSection = document.getElementById('contact')
     const ProTrackProjectVideo = document.getElementById('protrack_carousel__slide2')
-    const content = document.querySelectorAll('.content')
+    const HawkinsVideo = document.getElementById("hawkins_carousel__slide3")
+    const content = document.querySelectorAll('.carousel__slide')
 
     projects.addEventListener('click', e => {
         e.preventDefault()
@@ -29,11 +30,18 @@ document.addEventListener('DOMContentLoaded', e => {
         })
     })
 
-    ProTrackProjectVideo.addEventListener('click' , showVideo)
-
     for (const item of content) {
-        item.addEventListener('click', e => showModal(e.target.src, e.target.nodeName))
+        item.addEventListener('click', e => {
+            const parent = e.target.parentElement
+            if (!Array.from(parent.classList).includes('video')) {
+                const media = item.childNodes[1]
+                showModal(media.src, media.nodeName)
+            }
+        })
     }
+
+    ProTrackProjectVideo.addEventListener('click' , () => showVideo('images/ProTrack/Demo.mov'))
+    HawkinsVideo.addEventListener('click', () => showVideo('images/Hawkins/Onboard.mp4'))
 })
 
 const showModal = (src, type) => {
@@ -46,17 +54,17 @@ const showModal = (src, type) => {
     modal.addEventListener('click', () => modal.parentElement.removeChild(modal))
 
     modal.appendChild(content)
-    console.log(modal)
     body.appendChild(modal)
 }
 
-const showVideo = () => {
+const showVideo = src => {
     const body = document.querySelector('body')
     const modal = document.createElement('div')
     const content = document.createElement('video')
     content.controls = true
     content.autoplay = true
-    content.src = 'images/ProTrack/Demo.mov'
+    content.loop = true
+    content.src = src
 
     modal.id = 'modal'
     modal.addEventListener('click', () => modal.parentElement.removeChild(modal))
