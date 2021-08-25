@@ -513,10 +513,6 @@ footer p {
 	display: none;
 }
 
-.mobile-carousel img {
-	position: relative;
-}
-
 #mobile-protrack,
 #mobile-hawkins-video {
 	z-index: 5;
