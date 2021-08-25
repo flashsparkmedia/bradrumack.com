@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', e => {
     const contact = document.querySelector('a[href="#contact"]')
     const contactSection = document.getElementById('contact')
     const ProTrackProjectVideo = document.getElementById('protrack_carousel__slide2')
+    const mobileProTrackProjectVideo = document.getElementById('mobile-protrack')
     const HawkinsVideo = document.getElementById("hawkins_carousel__slide3")
     const content = document.querySelectorAll('.carousel__slide')
 
@@ -41,6 +42,7 @@ document.addEventListener('DOMContentLoaded', e => {
     }
 
     ProTrackProjectVideo.addEventListener('click' , () => showVideo('images/ProTrack/Demo.mov'))
+    mobileProTrackProjectVideo.addEventListener('click' , () => showVideo('images/ProTrack/Demo.mov'))
     HawkinsVideo.addEventListener('click', () => showVideo('images/Hawkins/Onboard.mp4'))
 })
 
