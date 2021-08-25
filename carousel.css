@@ -26,15 +26,9 @@
   }
   
   @keyframes snap {
-	50% {
-		scroll-snap-align: none;
-	}
 	98% {
-	  scroll-snap-align: center;
+		scroll-snap-align: center;
 	}
-	/* 97% {
-	  scroll-snap-align: none;
-	} */
 	99% {
 	  scroll-snap-align: none;
 	}
