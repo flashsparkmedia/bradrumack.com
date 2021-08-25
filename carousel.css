@@ -95,11 +95,11 @@
   }
 
   
-  @media (prefers-reduced-motion: reduce) {
+  /* @media (prefers-reduced-motion: reduce) {
 	.carousel__snapper {
 	  animation-name: none;
 	}
-  }
+  } */
   
   /* .carousel:hover .carousel__snapper,
   .carousel:focus-within .carousel__snapper {
