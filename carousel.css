@@ -2,9 +2,6 @@
 	75% {
 	  left: 0;
 	}
-	95% {
-	  left: 100%;
-	}
 	98% {
 	  left: 100%;
 	}
@@ -93,31 +90,7 @@
   .carousel__slide:last-child .carousel__snapper {
 	animation-name: tostart, snap;
   }
-
   
-  /* @media (prefers-reduced-motion: reduce) {
-	.carousel__snapper {
-	  animation-name: none;
-	}
-  } */
-  
-  /* .carousel:hover .carousel__snapper,
-  .carousel:focus-within .carousel__snapper {
-	animation-name: none;
-  } */
-  
-  .carousel__navigation {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	text-align: center;
-  }
-  
-  .carousel__navigation-list,
-  .carousel__navigation-item {
-	display: inline-block;
-  }
   
   .carousel__navigation-button {
 	display: inline-block;
