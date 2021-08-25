@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', e => {
     const ProTrackProjectVideo = document.getElementById('protrack_carousel__slide2')
     const mobileProTrackProjectVideo = document.getElementById('mobile-protrack')
     const HawkinsVideo = document.getElementById("hawkins_carousel__slide3")
+    const mobileHawkinsVideo = document.getElementById('mobile-hawkins-video')
     const content = document.querySelectorAll('.carousel__slide')
 
     projects.addEventListener('click', e => {
@@ -44,6 +45,7 @@ document.addEventListener('DOMContentLoaded', e => {
     ProTrackProjectVideo.addEventListener('click' , () => showVideo('images/ProTrack/Demo.mov'))
     mobileProTrackProjectVideo.addEventListener('click' , () => showVideo('images/ProTrack/Demo.mov'))
     HawkinsVideo.addEventListener('click', () => showVideo('images/Hawkins/Onboard.mp4'))
+    mobileHawkinsVideo.addEventListener('click', () => showVideo('images/Hawkins/Onboard.mp4'))
 })
 
 const showModal = (src, type) => {
