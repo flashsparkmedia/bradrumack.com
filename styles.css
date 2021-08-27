@@ -611,6 +611,7 @@ footer p {
 		align-items: center;
 		justify-content: center;
 	}
+
 	#about .job {
 		grid-template-columns: 35% 65%;
 	}
@@ -700,6 +701,14 @@ footer p {
 	}
 }
 
-/* @media (pointer:none), (pointer:coarse) {
+@media (pointer:none), (pointer:coarse) {
+	.hide-mobile {
+		display: none;
+	}
 	
-} */
+	.hide-desktop {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
