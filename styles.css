@@ -519,6 +519,9 @@ footer p {
 		margin: 0 auto;
 	}
 
+	.laptop {
+		width: 80%;
+	}
 
 	#about,
 	#contact {
