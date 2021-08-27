@@ -607,7 +607,7 @@ footer p {
 	}
 	
 	.hide-desktop {
-		display: flex;
+		display: grid;
 		align-items: center;
 		justify-content: center;
 	}
