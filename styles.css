@@ -601,6 +601,16 @@ footer p {
 }
 
 @media only screen and (max-width: 768px) {
+
+	.hide-mobile {
+		display: none;
+	}
+	
+	.hide-desktop {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 	#about .job {
 		grid-template-columns: 35% 65%;
 	}
@@ -690,14 +700,6 @@ footer p {
 	}
 }
 
-@media (pointer:none), (pointer:coarse) {
-	.hide-mobile {
-		display: none;
-	}
+/* @media (pointer:none), (pointer:coarse) {
 	
-	.hide-desktop {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-}
+} */
