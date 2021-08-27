@@ -151,6 +151,7 @@ article {
 	flex-wrap: wrap;
 	align-content: center;
 	padding: 60px;
+	column-gap: 10px;
 }
 
 article:nth-of-type(odd) {
@@ -171,7 +172,7 @@ article:nth-of-type(odd) {
 .article-info {
 	align-items: center;
 	justify-content: center;
-	width: 45%;
+	width: 50%;
 }
 
 .article-info p {
@@ -188,8 +189,8 @@ article:nth-of-type(odd) {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 55%;
-	margin-bottom: 10px;
+	width: calc(50% - 10px);
+
 }
 
 .article-icons {
@@ -213,6 +214,21 @@ article:nth-child(odd) .article-icons i:hover {
 	color: #c00101;
 }
 
+.laptop {
+	display: grid;
+	width: 100%;
+	grid-template: 1fr / 1fr;
+	min-width: 300px;
+	align-items: center;
+	justify-content: center;
+}
+
+.laptop-image {
+	max-width: 100%;
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
+}
+
 /* -- FlashSpark Section -- */
 
 #flashspark .section-header {
@@ -225,26 +241,8 @@ article:nth-child(odd) .article-icons i:hover {
 	align-items: flex-start;
 }
 
-#flashspark .article-graphics,
-#flashspark .laptop {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-#flashspark .laptop {
-	width: 80%;
-	min-width: 300px;
-	position: relative;
-	right: 3px;
-}
-
 #flashspark a {
 	color: #000;
-}
-
-.laptop-image {
-	position: relative;
 }
 
 /* -- Projects Section -- */
@@ -259,20 +257,6 @@ article:nth-child(odd) .article-icons i:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-}
-
-#projects .article-graphics,
-#projects .laptop {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-#projects .laptop {
-	width: 80%;
-	min-width: 300px;
-	position: relative;
-	right: 3px;
 }
 
 .testimonial {
@@ -443,34 +427,12 @@ footer p {
 	max-width: 1200px;
 }
 
-.laptop-image {
-	width: 120%;
-}
-
-.site-image,
 .carousel {
-	position: absolute;
-	width: 69%;
-	height: 85%;
-	top: -2%;
-	left: 11%;
-	padding-top: 0;
-}
-
-.carousel {
-	height: 100%;
 	overflow: hidden;
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
 }
 
-.carousel,
-.carousel__viewport {
-	width: 90%;
-}
-
-.carousel__viewport {
-	overflow: hidden;
-	padding: 0 5px solid #000;
-}
 
 .carousel__slide {
 	display: flex;
@@ -519,6 +481,11 @@ footer p {
 }
 
 @media only screen and (max-width: 1250px) {
+
+	article {
+		row-gap: 20px;
+	}
+
 	.section-header h3 {
 		font-size: 70px;
 	}
@@ -535,7 +502,6 @@ footer p {
 
 	section .article-graphics {
 		order: 2;
-		margin: 20px auto;
 	}
 
 	section .article-icons {
@@ -546,6 +512,11 @@ footer p {
 	.article-logo {
 		width: 80% !important;
 		margin: auto !important;
+	}
+
+	.article-graphics {
+		width: 80%;
+		margin: 0 auto;
 	}
 
 
@@ -722,8 +693,8 @@ footer p {
 	}
 	
 	.hide-desktop {
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
-
-
 }

@@ -45,6 +45,8 @@
   .carousel {
 	position: relative;
 	padding-top: 75%;
+	width: 75%;
+	margin: 0 auto;
 	filter: drop-shadow(0 0 10px #0003);
 	perspective: 100px;
   }
@@ -66,7 +68,6 @@
   .carousel__slide {
 	position: relative;
 	flex: 0 0 100%;
-	width: 100%;
 	counter-increment: item;
 	z-index: 3;
   }
