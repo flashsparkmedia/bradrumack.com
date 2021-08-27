@@ -10,12 +10,6 @@
 	align-items: center;
 }
 
-.mobile-carousel>* {
-	width: 100%;
-	position:absolute;
-	display: flex;
-}
-
 /* Slide animations */
 .mobile-carousel>*:nth-child(1) {
 	animation:fade1 10s infinite;
