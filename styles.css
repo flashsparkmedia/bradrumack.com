@@ -271,8 +271,20 @@ article:nth-child(odd) .article-icons i:hover {
 .testimonial {
 	display: block;
 	font-size: .8rem;
-	border-left: 10px solid #3f6150;
 	padding-left: 10px;
+}
+
+.testimonial em {
+	display: block;
+	text-align: right;
+}
+
+.dmd-testimonial {
+	border-left: 10px solid #171b25;
+}
+
+.hawkins-testimonial {
+	border-left: 10px solid #3f6150;
 }
 
 #dmdsystems .article-logo img {
