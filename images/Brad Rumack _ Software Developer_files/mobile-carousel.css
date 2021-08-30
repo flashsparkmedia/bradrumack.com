@@ -1,0 +1,64 @@
+.mobile-carousel {
+	margin: 0 auto;
+	height: 100%;
+	filter: drop-shadow(0 0 10px #0003);
+	overflow: hidden;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	align-items: center;
+	display: grid;
+	grid-template: 1fr / 1fr;
+}
+
+.mobile-carousel>* {
+	width: 75%;
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
+	margin: 0 auto;
+}
+
+/* Slide animations */
+.mobile-carousel>*:nth-child(1) {
+	animation:fade1 10s infinite;
+}
+
+@keyframes fade1 {
+	0%   {opacity:1}
+	25%  {opacity:0}
+	50%  {opacity:0}
+	75%  {opacity:0}
+	100% {opacity:1}
+}
+
+.mobile-carousel>*:nth-child(2) {
+	animation:fade2 10s infinite;
+}
+@keyframes fade2 {
+	0%   {opacity:0}
+	25%  {opacity:1}
+	50%  {opacity:0}
+	75%  {opacity:0}
+	100% {opacity:0}
+}
+
+.mobile-carousel>*:nth-child(3) {
+	animation:fade3 10s infinite;
+}
+@keyframes fade3 {
+	0%   {opacity:0}
+	25%  {opacity:0}
+	50%  {opacity:1}
+	75%  {opacity:0}
+	100% {opacity:0}
+}
+
+.mobile-carousel>*:nth-child(4) {
+	animation:fade4 10s infinite;
+}
+@keyframes fade4 {
+	0%   {opacity:0}
+	25%  {opacity:0}
+	50%  {opacity:0}
+	75%  {opacity:1}
+	100% {opacity:0}
+}

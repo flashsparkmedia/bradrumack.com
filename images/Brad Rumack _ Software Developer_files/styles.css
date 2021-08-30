@@ -285,7 +285,7 @@ article:nth-child(odd) .article-icons i:hover {
 	border-left: 8px solid #171b25;
 }
 
-.hawkins-testimonial span {
+.hawkins-testimonial {
 	display: block;
 	padding-left: 10px;
 	border-left: 8px solid #3f6150;
