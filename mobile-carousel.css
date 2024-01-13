@@ -16,8 +16,8 @@
 	grid-column: 1 / 2;
 	margin: 0 auto;
 }
-
-/* Slide animations */
+/* 
+Slide animations
 .mobile-carousel>*:nth-child(1) {
 	animation:fade1 10s infinite;
 }
@@ -61,4 +61,4 @@
 	50%  {opacity:0}
 	75%  {opacity:1}
 	100% {opacity:0}
-}
+} */

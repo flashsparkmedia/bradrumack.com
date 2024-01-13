@@ -1,4 +1,4 @@
-@keyframes tonext {
+/* @keyframes tonext {
 	90% {
 	  left: 0%;
 	}
@@ -31,7 +31,7 @@
 	}
 	/* 97% {
 	  scroll-snap-align: none;
-	} */
+	} 
 	99% {
 	  scroll-snap-align: none;
 	}
@@ -39,7 +39,7 @@
 	  scroll-snap-align: center;
 	  scroll-snap-stop: always;
 	}
-  }
+  } */
 
   
   .carousel {

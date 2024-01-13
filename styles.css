@@ -334,7 +334,8 @@ section .article-icons i {
 
 #about .article-info .paragraphs {
 	display: flex;
-	width: 100%;
+	flex-direction: column;
+	width: 60%;
 	margin: 0;
 }
 
